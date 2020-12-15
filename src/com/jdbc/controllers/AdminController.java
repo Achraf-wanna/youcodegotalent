@@ -33,7 +33,7 @@ public  ArrayList<User> getUsers() throws SQLException, ClassNotFoundException {
 		
 		ArrayList<User> usersList = new ArrayList<>();
 		
-		String sqlString = "SELECT * FROM users";
+		String sqlString = "SELECT * FROM user";
 		java.sql.PreparedStatement statement = config.connect().prepareStatement(sqlString);
 		ResultSet resultSet = statement.executeQuery();
 		
