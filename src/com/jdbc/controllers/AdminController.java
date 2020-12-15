@@ -39,7 +39,7 @@ public  ArrayList<User> getUsers() throws SQLException, ClassNotFoundException {
 		
 		while(resultSet.next()) {
 
-			User user  = new User(resultSet.getLong("user_id"),resultSet.getString("first_name"),resultSet.getString("last_name"),resultSet.getString("email"),resultSet.getString("phone"));
+			User user  = new User(resultSet.getLong("id"),resultSet.getString("first_name"),resultSet.getString("last_name"),resultSet.getString("email"),resultSet.getString("phone"));
 			usersList.add(user);
 			
 		}
