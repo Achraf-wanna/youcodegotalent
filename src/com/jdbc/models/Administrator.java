@@ -25,3 +25,5 @@ public class Administrator extends User {
 	public String toString() {
 		return "Administrator [password=" + password + ", toString()=" + super.toString() + "]";
 	}
+	
+}
